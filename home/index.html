@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta property="og:image" content=""/> 
+<meta property="og:description" content="책과 복합문화예술의 도시로"/>
+<meta property="og:title" content="파주출판도시"/>
+<title>파주출판도시</title>
+<script src="js/jquery.min.js"></script>
+
+<link rel="stylesheet" href="css/reset.css">
+<!-- reset css  -->
+<link rel="stylesheet" href="css/normalize.css">
+<!-- normalize css  -->
+<link rel="stylesheet" href="css/mastar.css">
+<!-- main css -->
+<link rel="stylesheet" href="css/swiper.min.css">
+
+</head>
+
+<body>
+<div id="section01">
+    <div class="menu_box">
+
+        <div class="logo"><a href="#section01"><img src="images/logo.png" alt="logo"></a></div>
+       	 	<ul>
+            <li><a href="#section01">About</a></li>
+            <li><a href="#section02">type</a></li>
+            <li><a href="#section03">wisdom</a></li>
+            <li><a href="#section04">gallery</a></li>
+            <li><a href="#section05">around</a></li>
+			</ul>
+		
+
+
+	</div>
+	<!-- navi   -->
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+		  <div class="swiper-slide slide1">
+			  <h1>파주 출판도시</h1>
+			  <h2>특별한 휴식공간과 독서복합문화공간</h2>
+			  <h3>자연, 도시출판, 예술이 조화를 이루는</h3>
+		  </div>
+		  <div class="swiper-slide slide2"></div>
+		  <div class="swiper-slide slide3"></div>
+		</div>
+		<!-- Add Pagination -->
+
+
+		
+	</div>
+
+	  
+
+
+</div>
+<!-- section01 -->
+<div id="section02">
+	<div class="txt01">
+		<h1>활자의 숲</h1>
+	</div>
+	<div class="sec_txt">
+	<div class="txt02">
+		<p>출판도시활자인쇄박물관은 세계에서 가장 많은 활자를 보<br>유하고 있다.활자와 장비들로 인해 인쇄를 하고,우리의 정<br>통제첵 방식으로 책을 만들어 세계에 보급하는 곳이다.</p>
+	</div>
+	<div class="section02_img"></div>
+
+		<div id="myslider">
+			<img src="images/sec_bg1.PNG"/>
+			<img src="images/sec_bg2.PNG"/>
+		  </div>
+		</div>
+		
+		<div class="sec_img">
+			<img src="images/Rectangle 6 copy 2.png">
+		</div>
+</div>	
+
+<!-- section02 -->
+<div id="section03">
+	<div class="sec3_txt">
+		<h1>지혜의 숲</h1>
+			<p>아시아출판문화정보센터 1층에 위치하고 있는 지혜의 숲은,가치있는 책을<br>
+			한데 모아 보존, 보호하고 관리하며, 함께 보는 공동의 서재이다. 학자, 지식<br>
+			인, 연구소에서 기증한 도서를 소장한 공간이기도 한다.
+	</div>
+
+
+</div>
+
+<!-- section03 -->
+<div id="section04">
+
+</div>
+<!-- section04 -->
+<div id="section05">
+
+</div>
+<!-- section05 -->
+
+
+
+
+
+
+
+
+
+<script src="js/swiper.min.js"></script>
+<script src="js/simpleslider.min.js"></script>
+<script>
+
+
+var imgSlider = simpleslider.getSlider({
+      container: document.getElementById('myslider'),
+      prop: 'opacity',
+      unit: '',
+      init: 0,
+      show: 1,
+      end: 0
+	});
+	
+
+	    var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+	/**스크롤이 설정한 높이 이상 내려갔을때 스타일추가하기**/
+	if (jQuery(window).width() > 0) {
+    jQuery(window).on("scroll",function(ev){
+        if(jQuery(window).scrollTop() > 150 ) { /**높이 픽셀 조정**/
+            jQuery('.menu_box').addClass('fixed');  /**위의 높이에서 .fixed 클래스를 추가합니다. 스타일에서 자유롭게 수치 조절 가능합니다.**/
+        }
+        else{
+			jQuery('.menu_box').removeClass('fixed');
+        }
+        return false;
+    });
+	}
+	
+	/**마우스 부드럽게 해당위치로 이동**/
+	$(function(){
+	   $('a[href^=#]').click(function() {
+		  var speed = 800;
+		  var href= $(this).attr("href");
+		  var target = $(href == "#" || href == "" ? 'html' : href);
+		  var position = target.offset().top;
+		  $('body,html').animate({scrollTop:position}, speed, 'swing');
+		  return false;
+	   });
+	});
+</script>
+</body>
+</html>

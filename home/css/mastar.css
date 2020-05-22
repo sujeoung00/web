@@ -1,0 +1,255 @@
+@import url(https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css);
+
+body{
+    font-size: 16px;
+    font-family: 'Nanum Barun Gothic', sans-serif;
+}
+
+
+*{list-style:none; margin:0; padding:0;}
+
+	
+#section01{
+    width:100%;
+    height:1000px; 
+    background:#FFF;
+    position: relative;
+    z-index: 1;
+    font-family: 'Nanum Barun Gothic', sans-serif;
+    
+}
+
+/* section01 end */
+
+.banner {
+    padding-left: 120px;
+}
+
+.main-txt{
+    color: #fff;
+    position: absolute;
+    z-index: 1;
+    top: 300px;
+    left: 430px;
+    font-size: 36px; 
+}
+
+
+
+
+
+
+
+
+#section02{
+    width:100%; 
+    height:1500px;
+    background-color: #FFF;
+}
+
+
+	
+#section03{
+    width:100%; 
+    height:1500px; 
+    background:#9F0;
+    background: url(../images/section_bg1.JPG) top center no-repeat;
+}
+
+
+
+
+.sec3_txt > h1 {
+    color: #fff;
+    margin: 100px;
+    padding-top: 200px;
+
+}
+.sec3_txt > p {
+   line-height: 35px;
+   font-size: 18px;
+   margin: 100px;
+}
+
+
+
+
+.sec3_txt {
+    color: #FFF;
+    font-size: 28px;
+
+}
+
+	
+#section04{
+    width:100%; 
+    height:1500px; 
+    background:#F33;}
+	
+#section05{
+    width:100%; 
+    height:1500px; 
+    background:#FC0;}
+
+.menu_box{
+    width:100%; 
+    height:90px; 
+    color:#FFF; 
+    position:fixed;
+    z-index: 999;
+    font-weight: bold;
+    
+    transition:all 0.5s ease-in-out; 
+    -webkit-transition:all 0.5s ease-in-out;
+}
+
+
+	
+	.fixed{
+        background:rgba(0,0,0,0.5); 
+        transition:all 0.5s ease-in-out; 
+        -webkit-transition:all 0.5s ease-in-out;}
+	
+		.logo a{
+        font-size: 46px;
+        padding:15px 0 0 35px; 
+        float:left; 
+        color:#FFF; 
+        font-family: 'Nanum Barun Gothic', sans-serif;
+        
+        text-decoration:none;}
+			
+		.menu_box > ul{
+            float:right; 
+            padding:0 35px 0 0;
+            
+        }
+			
+			.menu_box li{
+                float:left; 
+                text-align:center; 
+                width:100px; }
+				
+				.menu_box li a{
+                    text-decoration:none; 
+                    color:#FFF; 
+                    line-height:100px; 
+                    font-family: 'Nanum Barun Gothic', sans-serif;
+                    font-size:20px;
+                    
+                    
+                }
+					
+					/**메뉴부분 마우스 오버시 색상 **/
+					.menu_box li a:hover{
+                        border-top:2px solid #FFF; 
+                        padding-top:40px; color:#FFF;}
+						
+					.menu_box li:nth-child(2) a:hover{
+                        border-top:2px solid #6FF; 
+                        padding-top:40px; color:#6FF;}
+						
+					.menu_box li:nth-child(3) a:hover{
+                        border-top:2px solid #9F0; 
+                        padding-top:40px; color:#9F0;}
+						
+					.menu_box li:nth-child(4) a:hover{
+                        border-top:2px solid #F33; 
+                        padding-top:40px; color:#F33;}
+						
+					.menu_box li:nth-child(5) a:hover{
+                        border-top:2px solid #FC0; 
+                        padding-top:40px; color:#FC0;}
+
+
+                        .swiper-container {
+                            width: 100%;
+                            height: 100%;
+                          }
+                          .swiper-slide {
+                            text-align: center;
+                            font-size: 18px;
+                            background: #fff;
+                      
+                            /* Center slide text vertically */
+                            display: -webkit-box;
+                            display: -ms-flexbox;
+                            display: -webkit-flex;
+                            display: flex;
+                            -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                            -webkit-justify-content: center;
+                            justify-content: center;
+                            -webkit-box-align: center;
+                            -ms-flex-align: center;
+                            -webkit-align-items: center;
+                            align-items: center;
+                          }	
+
+
+                        .slide1{
+                            width: 100%;
+                            height: 641px;
+                            background: url('../images/home-banner.jpg') top center no-repeat;
+                        }
+                        
+                        .slide2{
+                            width: 100%;
+                            height: 641px;
+                            background: url('../images/main_banner2.jpg');
+                        
+                        }
+                        .slide3{
+                            width: 100%;
+                            height: 641px;
+                            background: url('../images/main_banner3.jpg');
+                        }
+
+
+                        
+.txt01 {
+    font-size: 1.5em;
+    font-weight: 550;
+    margin-top: 1000px;
+    margin-left: 418px;
+}               
+.sec_txt p{
+    margin: 50px 0 0 418px;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.section02_img{
+    display: flex;
+}
+
+
+.sec_img{
+    background-repeat: no-repeat;
+    width:612px; 
+    height:400px;
+    padding-left: 1100px;
+}
+
+
+#myslider{
+    width:612px; 
+    height:400px;
+    margin: 80px 0px 0px 420px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
