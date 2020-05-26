@@ -34,53 +34,55 @@ body{
     font-size: 36px; 
 }
 
+/* swiper-container  파주출판도시 시작 */
+.swiper-slide > h1 {
+    color: #fff;
 
-
-
-
-
-
-
-#section02{
-    width:100%; 
-    height:1500px;
-    background-color: #FFF;
 }
-
+/* end */
 
 	
 #section03{
     width:100%; 
     height:1500px; 
     background:#9F0;
-    background: url(../images/section_bg1.JPG) top center no-repeat;
+    background: url(../images/sec_bg8.jpg) top right      no-repeat;
+
 }
 
 
 
 
 .sec3_txt > h1 {
-    color: #fff;
-    margin: 100px;
+    color: #000;
+    margin: 0px;
     padding-top: 200px;
+    padding-left: 1020px;
+    font-size: bold;
 
 }
 .sec3_txt > p {
    line-height: 35px;
    font-size: 18px;
-   margin: 100px;
+   padding-left: 150px;
+}
+
+.sec3_img{
+    padding-left: 150px;
+    
 }
 
 
 
 
 .sec3_txt {
-    color: #FFF;
+    color: #000;
     font-size: 28px;
 
 }
 
-	
+/* section03 end	 */
+
 #section04{
     width:100%; 
     height:1500px; 
@@ -206,15 +208,29 @@ body{
                         }
 
 
-                        
+    
+ 
+
+
+
+
+ #section02{
+    width:100%; 
+    height:1500px;
+    background-color: #FFF;
+  }
+
+
 .txt01 {
     font-size: 1.5em;
     font-weight: 550;
-    margin-top: 1000px;
-    margin-left: 418px;
-}               
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 315px;
+}          
+
 .sec_txt p{
-    margin: 50px 0 0 418px;
+    margin: 50px 0 0 315px;
     font-size: 18px;
     line-height: 28px;
 }
@@ -225,31 +241,14 @@ body{
 
 
 .sec_img{
-    background-repeat: no-repeat;
-    width:612px; 
-    height:400px;
+    background-repeat:  no-repeat;
     padding-left: 1100px;
+    
 }
 
 
 #myslider{
     width:612px; 
     height:400px;
-    margin: 80px 0px 0px 420px;
+    margin: 80px 0px 0px 320px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
