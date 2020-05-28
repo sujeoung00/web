@@ -15,13 +15,12 @@
 <link rel="stylesheet" href="css/mastar.css">
 <!-- main css -->
 <link rel="stylesheet" href="css/swiper.min.css">
-
+<link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 <div id="section01">
     <div class="menu_box">
-
         <div class="logo"><a href="#section01"><img src="images/logo.png" alt="logo"></a></div>
        	 	<ul>
             <li><a href="#section01">About</a></li>
@@ -43,10 +42,10 @@
 			  자연, 도시출판, 예술이 조화를 이루는 도시
 		  </div>
 
-		  <div class="slide">
-			  <h2>></h2>
-		  </div>
-		
+
+        
+          <div class="swiper-pagination"></div>
+
 		  <div class="swiper-slide slide2"></div>
 		  <div class="swiper-slide slide3"></div>
 		</div>
@@ -62,24 +61,25 @@
 </div>
 <!-- section01 -->
 <div id="section02">
-	<div class="txt01">
-		<h1>활자의 숲</h1>
-	</div>
-	<div class="sec_txt">
-	<div class="txt02">
-		<p>출판도시활자인쇄박물관은 세계에서 가장 많은 활자를 보<br>유하고 있다.활자와 장비들로 인해 인쇄를 하고,우리의 정<br>통제첵 방식으로 책을 만들어 세계에 보급하는 곳이다.</p>
-	</div>
-	<div class="section02_img"></div>
+    <div class="sec_txt">
+	    <div class="txt01">
+            <div class="wisdom-text">
+		    <h1>활자의 숲</h1>
+	      </div> 
+		    <p>출판도시활자인쇄박물관은 세계에서 가장 많은 활자를 보<br>유하고 있다.활자와 장비들로 인해 인쇄를 하고,우리의 정<br>통제첵 방식으로 책을 만들어 세계에 보급하는 곳이다.</p>
 
+
+
+        <div class="wisdom-img">
 		<div id="myslider">
 			<img src="images/sec_bg1.PNG"/>
-			<img src="images/sec_bg2.PNG"/>
-		  </div>
+            <img src="images/sec_bg2.PNG"/>
+            <!-- <img src="images/sec_bg1.PNG"/>  2개 더 추가 놓아라.
+            <img src="images/sec_bg2.PNG"/> -->
 		</div>
-		
-		<div class="sec_img">
-			<img src="images/Rectangle 6 copy 2.png">
-		</div>
+	    </div>
+    </div>
+</div>
 </div>	
 
 <!-- section02 -->
@@ -91,24 +91,45 @@
 			인, 연구소에서 기증한 도서를 소장한 공간이기도 한다.
 	</div>
 
-<div class="sec3_img">
+    <div id="myslider-slided">
+        <img src="images/sec_bg01.jpg"/>
+        <img src="images/Layer 3.png"/>
+        <!-- <img src="images/sec_bg01.jpg"/> 2개 더 추가해 놓을것
+        <img src="images/Layer 3.png"/> -->
+      </div>
 
-	<img src="images/sec_bg1.PNG">
 
-</div>
-
-</div>
 
 </div>
 
 <!-- section03 -->
 <div id="section04">
+<div class="sec04_txt">
+	<h1>미메시스 아트뮤지엄</h1>
+	    <p>1992년 프리츠커 수상자가 지은 건물이며, 또한 때때로 변<br>
+		하는 자연광의 항연과 함께 예술 작품을 감상하는 (빛으로<br>
+		미술관)으로, 계절에 따라 관찰 시간이 변합니다.
+    </p>
+    
+    <div id="myslider-sliding">
+        <img src="images/mimae.png"/>
+        <img src="images/mimae2.png"/>
+        <!-- <img src="https://picsum.photos/612/612?random=1"/>  사진 2개 더 추가해 놓을 것
+        <img src="https://picsum.photos/612/612?random=2"/> -->
+      </div>
+
+</div>
 
 </div>
 <!-- section04 -->
 <div id="section05">
 
+
+
+    
+	
 </div>
+
 <!-- section05 -->
 
 
@@ -121,7 +142,36 @@
 
 <script src="js/swiper.min.js"></script>
 <script src="js/simpleslider.min.js"></script>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery.sliphover.min.js"></script>
 <script>
+
+    var imgSlider = simpleslider.getSlider({
+      container: document.getElementById('myslider-slided'),
+      prop: 'opacity',
+      unit: '',
+      init: 0,
+      show: 1,
+      end: 0
+    });
+
+
+    var imgSlider = simpleslider.getSlider({
+      container: document.getElementById('myslider-sliding'),
+      prop: 'opacity',
+      unit: '',
+      init: 0,
+      show: 1,
+      end: 0
+    });
+
+
+		$(function(){
+        
+        $('#container').sliphover({
+            duration:600
+        });
+        });
 
 
 var imgSlider = simpleslider.getSlider({

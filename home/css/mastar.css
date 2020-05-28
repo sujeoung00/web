@@ -3,6 +3,33 @@
 body{
     font-size: 16px;
     font-family: 'Nanum Barun Gothic', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+@media(max-width:767px){
+    .menu{
+        display: block;
+    }
+    .navi{
+        display: none;
+    }
+    nav{
+        justify-content: space-between;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .width-40{
+        width: 100%;
+    }
+    .width-60{
+        width: 100%;
+    }
+    .info-big{
+        padding: 0;
+    }
 }
 
 
@@ -45,8 +72,9 @@ body{
 #section03{
     width:100%; 
     height:1500px; 
-    background:#9F0;
-    background: url(../images/sec_bg8.jpg) top right      no-repeat;
+    background: url() top right  no-repeat;
+    font-size: 2rem;
+    background-color: #FFF;
 
 }
 
@@ -56,24 +84,28 @@ body{
 .sec3_txt > h1 {
     color: #000;
     margin: 0px;
-    padding-top: 200px;
-    padding-left: 1020px;
-    font-size: bold;
-
+    padding-top: 10%;
+    padding-left: 1300px;
+    font-size: 1.8em;
+    font-weight: bold;
 }
 .sec3_txt > p {
    line-height: 35px;
    font-size: 18px;
-   padding-left: 150px;
-}
-
-.sec3_img{
-    padding-left: 150px;
-    
+   padding-left: 985px;
+   margin-top: 40px;
+   font-family: 'Nanum Barun Gothic', sans-serif;
 }
 
 
+.sec03_images {
+    padding-left: 50%;
 
+}
+
+.sec3_img {
+    padding-left: 5%;
+}
 
 .sec3_txt {
     color: #000;
@@ -81,17 +113,30 @@ body{
 
 }
 
+#myslider-slided{
+    width:612px; 
+    height:612px;
+    margin-left: 190px;
+}
+
 /* section03 end	 */
 
 #section04{
     width:100%; 
     height:1500px; 
-    background:#F33;}
+    background:#FFF;
+}
+
+
+.sec04_txt{
+    background: url(../images/);
+}
 	
 #section05{
     width:100%; 
     height:1500px; 
-    background:#FC0;}
+    background: #6685;
+}
 
 .menu_box{
     width:100%; 
@@ -212,43 +257,96 @@ body{
  
 
 
-
+/* section02 start */
 
  #section02{
     width:100%; 
     height:1500px;
     background-color: #FFF;
+    padding-top: 160px;
   }
 
-
-.txt01 {
+.txt01{
     font-size: 1.5em;
     font-weight: 550;
-    margin: 0;
-    padding-top: 10px;
-    padding-left: 315px;
+    padding-top: 1px;
+    padding-left: 190px;
 }          
 
 .sec_txt p{
-    margin: 50px 0 0 315px;
+    margin: 50px 0 0 0;
     font-size: 18px;
     line-height: 28px;
+    font-family: 'Nanum Barun Gothic', sans-serif;
 }
 
-.section02_img{
-    display: flex;
-}
+
 
 
 .sec_img{
     background-repeat:  no-repeat;
-    padding-left: 1100px;
-    
+    padding-left: 900px;
 }
 
 
 #myslider{
     width:612px; 
     height:400px;
-    margin: 80px 0px 0px 320px;
+    margin: 80px 0px 0px 910px;
+}
+
+.wisdom-text > p{
+    margin-left: 100px;
+
+}
+
+
+
+
+/* section02 end */
+
+
+/* section04 start */
+
+.sec04_txt {
+    font-size: 1.5em;
+    font-size: bold;
+    background: url();
+    background-repeat: no-repeat;
+    /* margin-top: 220px; */
+    padding-top: 4%;
+}
+
+.sec04_txt>p {
+    padding-left: 198px;
+    padding-top: 10px;
+    font-family: 'Nanum Barun Gothic', sans-serif;
+    font-size: initial;
+    font-size: 18px;
+    line-height: 35px;
+    margin-top: 40px;
+}
+
+.sec04_txt>h1 {
+    padding-left: 10%;
+    padding-top: 100px;
+    margin: 0;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#myslider-sliding {
+    width:612px; 
+    height:612px;
+    margin-left: 900px;
+}
+
+
+@media (max-width:767px){
+    .wisdom-text{
+        width: 100%;
+    }
+    .txt01{
+        width: 100%;
+    }
 }
